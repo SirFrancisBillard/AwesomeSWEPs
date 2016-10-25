@@ -24,7 +24,7 @@ SWEP.HoldType 				= "ar2"		-- how others view you carrying the weapon
 
 SWEP.SelectiveFire		= true
 
-SWEP.ViewModelFOV			= 70
+SWEP.ViewModelFOV			= 60
 SWEP.ViewModelFlip			= false
 SWEP.ViewModel				= "models/weapons/cstrike/c_rif_ak47.mdl"	-- Weapon view model
 SWEP.WorldModel				= "models/weapons/w_rif_ak47.mdl"	-- Weapon world model
@@ -53,8 +53,8 @@ SWEP.data.ironsights			= 1
 
 SWEP.Primary.NumShots	= 1		-- How many bullets to shoot per trigger pull
 SWEP.Primary.Damage		= 30	-- Base damage per bullet
-SWEP.Primary.Spread		= .003	-- Define from-the-hip accuracy 1 is terrible, .0001 is exact)
-SWEP.Primary.IronAccuracy = .001 -- Ironsight accuracy, should be the same for shotguns
+SWEP.Primary.Spread		= .008	-- Define from-the-hip accuracy 1 is terrible, .0001 is exact)
+SWEP.Primary.IronAccuracy = .003 -- Ironsight accuracy, should be the same for shotguns
 
 -- Enter iron sight info and bone mod info below
 SWEP.IronSightsPos = Vector(-6.6, -12.841, 2.519)

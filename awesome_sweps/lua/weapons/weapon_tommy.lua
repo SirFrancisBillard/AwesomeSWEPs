@@ -6,8 +6,8 @@ SWEP.Author				= ""
 SWEP.Contact				= ""
 SWEP.Purpose				= ""
 SWEP.Instructions				= ""
-SWEP.MuzzleAttachment			= "1" 	-- Should be "1" for CSS models or "muzzle" for hl2 models
-SWEP.ShellEjectAttachment			= "2" 	-- Should be "2" for CSS models or "1" for hl2 models
+SWEP.MuzzleAttachment			= "muzzle" 	-- Should be "1" for CSS models or "muzzle" for hl2 models
+SWEP.ShellEjectAttachment			= "1" 	-- Should be "2" for CSS models or "1" for hl2 models
 SWEP.PrintName				= "Tommy Gun"		-- Weapon name (Shown on HUD)	
 SWEP.Slot				= 2				-- Slot in the weapon selection menu
 SWEP.SlotPos				= 22			-- Position in the slot
@@ -43,7 +43,7 @@ SWEP.Primary.KickUp				= 0.3		-- Maximum up recoil (rise)
 SWEP.Primary.KickDown			= 0.3		-- Maximum down recoil (skeet)
 SWEP.Primary.KickHorizontal		= 0.3		-- Maximum up recoil (stock)
 SWEP.Primary.Automatic			= true		-- Automatic = true; Semi Auto = false
-SWEP.Primary.Ammo			= "smg"			-- pistol, 357, smg1, ar2, buckshot, slam, SniperPenetratedRound, AirboatGun
+SWEP.Primary.Ammo			= "smg1"			-- pistol, 357, smg1, ar2, buckshot, slam, SniperPenetratedRound, AirboatGun
 -- Pistol, buckshot, and slam always ricochet. Use AirboatGun for a light metal peircing shotgun pellets
 
 SWEP.Secondary.IronFOV			= 65		-- How much you 'zoom' in. Less is more! 	
@@ -53,8 +53,8 @@ SWEP.data.ironsights			= 1
 
 SWEP.Primary.NumShots	= 1		-- How many bullets to shoot per trigger pull
 SWEP.Primary.Damage		= 30	-- Base damage per bullet
-SWEP.Primary.Spread		= .003	-- Define from-the-hip accuracy 1 is terrible, .0001 is exact)
-SWEP.Primary.IronAccuracy = .013 -- Ironsight accuracy, should be the same for shotguns
+SWEP.Primary.Spread		= .015	-- Define from-the-hip accuracy 1 is terrible, .0001 is exact)
+SWEP.Primary.IronAccuracy = .008 -- Ironsight accuracy, should be the same for shotguns
 
 -- Enter iron sight info and bone mod info below
 SWEP.IronSightsPos = Vector(-6.421, -7.801, 1.159)
