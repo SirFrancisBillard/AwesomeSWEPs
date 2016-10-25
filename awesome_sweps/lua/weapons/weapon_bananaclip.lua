@@ -20,7 +20,7 @@ SWEP.AutoSwitchTo			= true		-- Auto switch to if we pick it up
 SWEP.AutoSwitchFrom			= true		-- Auto switch from if you pick up a better weapon
 SWEP.HoldType 				= "ar2"		-- how others view you carrying the weapon
 -- normal melee melee2 fist knife smg ar2 pistol rpg physgun grenade shotgun crossbow slam passive 
--- you"re mostly going to use ar2, smg, shotgun or pistol. rpg and crossbow make for good sniper rifles
+-- you're mostly going to use ar2, smg, shotgun or pistol. rpg and crossbow make for good sniper rifles
 
 SWEP.SelectiveFire		= true
 
