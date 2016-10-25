@@ -22,7 +22,7 @@ SWEP.HoldType 				= "ar2"		-- how others view you carrying the weapon
 -- normal melee melee2 fist knife smg ar2 pistol rpg physgun grenade shotgun crossbow slam passive 
 -- you're mostly going to use ar2, smg, shotgun or pistol. rpg and crossbow make for good sniper rifles
 
-SWEP.SelectiveFire		= true
+SWEP.SelectiveFire		= false
 
 SWEP.ViewModelFOV			= 60
 SWEP.ViewModelFlip			= false

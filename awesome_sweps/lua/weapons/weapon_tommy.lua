@@ -65,7 +65,7 @@ SWEP.RunSightsPos = Vector(0, 0, 0)
 SWEP.RunSightsAng = Vector(-10.4, 26.6, 0)
 
 SWEP.VElements = {
-	["drum"] = { type = "Model", model = "models/props_phx/construct/plastic/plastic_angle_360.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(5.751, 1.703, 0.128), angle = Angle(87.65, -2.389, -5.569), size = Vector(0.082, 0.076, 0.275), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
+	["drum"] = { type = "Model", model = "models/props_phx/construct/plastic/plastic_angle_360.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(5.751, 1.703, 0), angle = Angle(87.65, -2.389, -5.569), size = Vector(0.082, 0.076, 0.275), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 }
 
 SWEP.WElements = {
@@ -76,7 +76,7 @@ local clipOut = Sound("weapons/m4a1/m4a1_clipout.wav")
 local clipIn = Sound("weapons/ak47/ak47_clipin.wav")
 
 function SWEP:DoLerpVec()
-	local ClipStartVec = Vector(5.751, 1.703, 0.128)
+	local ClipStartVec = Vector(5.751, 1.703, 0)
 	local ClipEndVec = Vector(5.751, 1.703, 10)
 	self:EmitSound(clipOut)
 	for i = 0, 0.5, 0.01 do
