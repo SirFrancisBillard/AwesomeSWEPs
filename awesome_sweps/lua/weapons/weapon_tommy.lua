@@ -1,5 +1,5 @@
 -- Variables that are used on both client and server
-SWEP.Gun = ("tfa_ak47") -- must be the name of your swep but NO CAPITALS!
+SWEP.Gun = SWEP.ClassName -- must be the name of your swep but NO CAPITALS!
 
 SWEP.Category				= "Awesome SWEPs"
 SWEP.Author				= ""
@@ -70,4 +70,37 @@ SWEP.VElements = {
 
 SWEP.WElements = {
 	["drum"] = { type = "Model", model = "models/props_phx/construct/plastic/plastic_angle_360.mdl", bone = "ValveBiped.Bip01_L_Hand", rel = "", pos = Vector(2.02, 5.125, 0.142), angle = Angle(-9.294, -20.651, 86.066), size = Vector(0.096, 0.094, 0.499), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
+}
+
+local clipOut = Sound("weapons/m4a1/m4a1_clipout.wav")
+local clipIn = Sound("weapons/ak47/ak47_clipin.wav")
+
+function SWEP:DoLerpVec()
+	local ClipStartVec = Vector(5.751, 1.703, 0.128)
+	local ClipEndVec = Vector(5.751, 1.703, 10)
+	self:EmitSound(clipOut)
+	for i = 0, 0.5, 0.01 do
+		timer.Simple(i, function()
+			if not IsValid(self) then return end
+			self.VElements["drum"]["pos"] = LerpVector(0.1, self.VElements["drum"]["pos"], ClipEndVec)
+		end)
+	end
+	timer.Simple(0.5, function()
+		for i = 0, 0.4, 0.01 do
+			timer.Simple(i, function()
+				if not IsValid(self) then return end
+				self.VElements["drum"]["pos"] = LerpVector(0.1, self.VElements["drum"]["pos"], ClipStartVec)
+			end)
+		end
+	end)
+	timer.Simple(0.7, function()
+		if not IsValid(self) then return end
+		self:EmitSound(clipIn)
+	end)
+end
+
+SWEP.EventTable = {
+	[ACT_VM_RELOAD] = {
+		{ ["time"] = 0.1, ["type"] = "lua", ["value"] = SWEP.DoLerpVec, ["client"] = true, ["server"] = false  },
+	}
 }

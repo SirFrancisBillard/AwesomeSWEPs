@@ -1,5 +1,5 @@
 -- Variables that are used on both client and server
-SWEP.Gun = ("tfa_ak47") -- must be the name of your swep but NO CAPITALS!
+SWEP.Gun = SWEP.ClassName -- must be the name of your swep but NO CAPITALS!
 
 SWEP.Category				= "Awesome SWEPs"
 SWEP.Author				= ""

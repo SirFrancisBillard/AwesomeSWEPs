@@ -1,5 +1,5 @@
 -- Variables that are used on both client and server
-SWEP.Gun = ("tfa_ak47") -- must be the name of your swep but NO CAPITALS!
+SWEP.Gun = SWEP.ClassName -- must be the name of your swep but NO CAPITALS!
 
 SWEP.Category				= "Awesome SWEPs"
 SWEP.Author				= ""
@@ -20,7 +20,7 @@ SWEP.AutoSwitchTo			= true		-- Auto switch to if we pick it up
 SWEP.AutoSwitchFrom			= true		-- Auto switch from if you pick up a better weapon
 SWEP.HoldType 				= "ar2"		-- how others view you carrying the weapon
 -- normal melee melee2 fist knife smg ar2 pistol rpg physgun grenade shotgun crossbow slam passive 
--- you're mostly going to use ar2, smg, shotgun or pistol. rpg and crossbow make for good sniper rifles
+-- you"re mostly going to use ar2, smg, shotgun or pistol. rpg and crossbow make for good sniper rifles
 
 SWEP.SelectiveFire		= true
 
@@ -46,7 +46,7 @@ SWEP.Primary.Automatic			= true		-- Automatic = true; Semi Auto = false
 SWEP.Primary.Ammo			= "ar2"			-- pistol, 357, smg1, ar2, buckshot, slam, SniperPenetratedRound, AirboatGun
 -- Pistol, buckshot, and slam always ricochet. Use AirboatGun for a light metal peircing shotgun pellets
 
-SWEP.Secondary.IronFOV			= 65		-- How much you 'zoom' in. Less is more! 	
+SWEP.Secondary.IronFOV			= 65		-- How much you "zoom" in. Less is more! 	
 
 SWEP.data 				= {}				--The starting firemode
 SWEP.data.ironsights			= 1
