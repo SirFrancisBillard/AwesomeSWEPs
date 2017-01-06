@@ -82,14 +82,14 @@ function SWEP:DoLerpVec()
 	for i = 0, 0.5, 0.01 do
 		timer.Simple(i, function()
 			if not IsValid(self) then return end
-			self.VElements["drum"]["pos"] = LerpVector(0.1, self.VElements["drum"]["pos"], ClipEndVec)
+			self.VElements["drum"]["pos"] = LerpVector(FrameTime(), self.VElements["drum"]["pos"], ClipEndVec)
 		end)
 	end
 	timer.Simple(0.5, function()
 		for i = 0, 0.4, 0.01 do
 			timer.Simple(i, function()
 				if not IsValid(self) then return end
-				self.VElements["drum"]["pos"] = LerpVector(0.1, self.VElements["drum"]["pos"], ClipStartVec)
+				self.VElements["drum"]["pos"] = LerpVector(FrameTime(), self.VElements["drum"]["pos"], ClipStartVec)
 			end)
 		end
 	end)
@@ -101,6 +101,6 @@ end
 
 SWEP.EventTable = {
 	[ACT_VM_RELOAD] = {
-		{ ["time"] = 0.1, ["type"] = "lua", ["value"] = SWEP.DoLerpVec, ["client"] = true, ["server"] = false  },
+		{["time"] = 0.1, ["type"] = "lua", ["value"] = SWEP.DoLerpVec, ["client"] = true, ["server"] = false},
 	}
 }
